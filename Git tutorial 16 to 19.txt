@@ -1,0 +1,18 @@
+Tutorial #16     Branching & Merging a Production Grade Project
+
+. git merge develop      --> To merge branching
+
+Tutorial #17     Resolving Merge Conflicts (With Example)
+
+. Merge Conflict     --> The problems while merging branches is k/A "merge conflict".  It is denoted by <<<<<< in Editor or Compiler (like if we changed title in two commits, then while merging which title to be kept is k/A merge conflict)
+. First put change you wanna keep and delete other changes then run 
+. git add index.html  --> or file you wanna keep
+then commit 
+
+Tutorial #18     Git Branching Workflow in Production
+
+Tutorial #19     Pushing Git Branches To Remote Repositories
+
+First access current branch then "git checkout bugfix" 
+. git branch origin bugfix   --> to push bugfix branch
+. git push -d origin bugfix  --> to delete branch in remote
