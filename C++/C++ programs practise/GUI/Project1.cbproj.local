@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/03/27 00:50:45.000.281,=C:\Users\asads\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2022/03/27 00:50:45.000.964,=C:\Users\asads\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022/03/27 02:08:57.000.773,E:\C++ programs practise\GUI\To_do_list_app.cpp=C:\Users\asads\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2022/03/27 02:08:57.000.773,E:\C++ programs practise\GUI\To_do_list_app.h=C:\Users\asads\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2022/03/27 02:08:57.000.773,E:\C++ programs practise\GUI\To_do_list_app.fmx=C:\Users\asads\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2022/03/27 02:09:33.000.427,E:\C++ programs practise\GUI\Project1PCH1.h=C:\Users\asads\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022/03/27 02:09:37.000.041,E:\C++ programs practise\GUI\Project1.cbproj=C:\Users\asads\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

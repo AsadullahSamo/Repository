@@ -1,0 +1,2 @@
+This is coming from a file
+For printing second line we have to write getline function again
