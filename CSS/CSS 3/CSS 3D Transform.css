@@ -1,0 +1,20 @@
+/*
+Perspective --> From how much distance you are watching object
+perspective-origin --> From which angle are you watching
+
+Syntax:- transform: perspective(value in px) rotate3d(X-axis, Y-axis, Z-axis, angle)/ translate3d(X-axis, Y-axis, Z-axis);
+for origin use "perspective-origin: 50% 50%;"
+*/
+
+#cover{
+    border: 2px solid red;
+    margin: 150px;
+    width: 200px;
+    height: 200px;
+}
+#content{
+    background-color: yellowgreen;
+    height: 200px;
+    width: 200px;
+    transform: perspective(300px) rotate3d(50, 50, 0, 30deg);
+}

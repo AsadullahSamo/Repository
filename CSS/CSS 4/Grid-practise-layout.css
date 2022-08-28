@@ -1,0 +1,33 @@
+.grid-container{
+    background-color: indianred;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    gap: 10px;       /* it is shorthand for row-gap and column-gap */ 
+}
+.grid-item{
+    background-color: wheat;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 40px;   
+    text-align: center;
+}
+
+#header{
+    grid-area: header;
+}
+#menu{
+    grid-area: menu;
+}
+#footer{
+    grid-area: footer;
+}   
+#right{
+    grid-area: right;
+}
+#main{
+    grid-area: main;
+}

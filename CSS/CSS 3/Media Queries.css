@@ -1,0 +1,51 @@
+/* Decrease width by scrolling browser left and check size at which heading
+   is becoming distorted through onlineutilitywebsite.com my browser size and 
+   when it is distorting set px in media query at that size
+*/
+#div1{
+    width: 70%;
+    float: left;
+    background-color: lawngreen;
+}
+#div2{
+    width: 30%;
+    float: left;
+    background-color: rosybrown;
+}
+h1{
+    font-size: 80px;
+}
+
+
+/* Tip:- Be sure to check size on Moto G4 and iPad 
+Also we can use "@media screen and (min-width: 400px) and (max-width: 800px){ }" 
+    also can use "@media screen or (max-width: 350px) {}"
+*/
+
+@media screen and (max-width: 820px) {         /* whatever we define in this block is valid till 820px (if width is>768 this is not valid any more) */
+    #div1{
+        width: 50%;
+    }
+    #div2{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 400px) {       
+    #div1{
+        width: 100%;
+    }
+    #div2{
+        width: 100%;
+    }
+}
+
+/* Shortcut to make images and videos responsive  
+img{
+    width: 100%;
+    height: auto;
+}
+video{
+    width: 100%;
+    height: auto;
+}
+*/

@@ -1,0 +1,29 @@
+/*
+A. Some functions we previously used
+1. url()         2. rgb()        3. linear-gradient()
+
+B. More are 
+1. calc() --> if we want something to be fixed when working dynamically (making browser small or big)
+2. var() --> used to set value so that we should change it throughout our CSS easily
+*/
+
+:root{       /* syntax for defining variable */
+    --primary-color: red;
+    --btn-color: blueviolet;
+    --text-color: white;
+}
+#fun{
+    background-color: var(--primary-color);
+    height: 200px;
+    width: calc(100% - 200px);    /* --> it will maintain its size whether we make browser small*/
+}
+
+a{
+    width: 100px;
+    height: 100px;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    padding: 10px 30px;
+    margin: 20px;
+    text-decoration: none;
+}

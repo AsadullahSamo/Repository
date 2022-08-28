@@ -1,0 +1,12 @@
+#Padding{
+    border: 1px solid red;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 10%;
+    padding-left: 20%;
+}
+
+#Padding1{
+    border: 1px solid red;
+    padding: 25px 10px 30px 10px;
+}

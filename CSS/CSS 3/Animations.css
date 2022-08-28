@@ -1,0 +1,69 @@
+@keyframes changecolor {         /* here we gave keyframes name changecolor */
+    from{ background-color: red; }        /* or give duration in % and can be multiple durations */
+    to { background-color: yellow;}
+}
+
+@keyframes change{
+    0% { background-color: red;}
+    25% { width: 300px;}
+    50% { background-color: yellow;}
+    75% { width: 200px;}
+    100% { background-color: blue;}
+}
+@keyframes changeBehaviour{
+    0% { background-color: red; border-radius: 0%;}
+    10% { background-color: orange; border-radius: 10%;}
+    20% { background-color: olive; border-radius: 20%;}
+    30% { background-color: yellowgreen; border-radius: 30%;}
+    40% { background-color: chocolate; border-radius: 40%;}
+    50% { background-color: blue; border-radius: 50%;}
+    60% { background-color: yellow; border-radius: 40%;}
+    70% { background-color: indianred; border-radius: 30%;}
+    80% { background-color: red; border-radius: 20%;}
+    90% { background-color: indigo; border-radius: 10%;}
+    100% { background-color: red; border-radius: 0%;}
+}
+
+/* Key Frame:- Defines what will be in animation and when(at which time)
+We define key frame before this */
+
+#animate{
+    display: inline-block;
+    background-color: red;
+    height: 200px;
+    width: 200px;                 /* refresh to view effect */
+    animation-name: changecolor;  /* compulsory */  
+    animation-duration: 1s;       /* compulsory */
+}
+#animate2{
+    display: inline-block;
+    background-color: red;
+    height: 200px;
+    width: 200px;           
+    animation-name: change;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+}
+#animate3{
+    display: inline-block;
+    background-color: red;
+    height: 200px;
+    width: 200px;                 /* refresh to view effect */
+    animation-name: change;  /* compulsory */  
+    animation-duration: 4s;       /* compulsory */
+    animation-direction: alternate;          /* animation-direction: alternate/alternate-reverse; */
+    animation-iteration-count: infinite;
+}
+#animate4{
+    height: 200px;
+    width: 200px;                 /* refresh to view effect */
+    animation-name: changeBehaviour;  /* compulsory */  
+    animation-duration: 2s;       /* compulsory */
+    animation-iteration-count: infinite;
+}
+
+/* other properties of animation are 
+    animation-delay: 2s;  --> How delay animation starts
+    animation-iteration-count: 3/4/infinite; --> How much time animation occurs
+    animation-timing-function: ease/ease-in;
+*/

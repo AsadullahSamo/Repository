@@ -1,0 +1,9 @@
+Inline has more priority then internal or external depending on which is written done
+
+Also if same process is applied on one element i.e. either they have all 3 selectors OR same class is taken but with different class, then priority is given to that which is at bottom 
+We have 3 selectors in CSS
+1. Element Selector 2. Id 3. Class
+B. An element can have more than 2 classes separeted by space like
+<p class="green-text bold-h"> Para </p>  Now green-text is separate class and bold-h is separete classS
+C. An element can have id and class at same time
+D. If an element has all selectors then priority goes TO id then class then element

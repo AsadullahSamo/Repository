@@ -1,0 +1,12 @@
+/* 
+    by default overflow is hidden 
+    most important is--> overflow: auto;, which decides automatically whether to use scroll bar or not and to which axis
+*/
+
+#overflow{
+    border: 1px solid red;
+    width: 500px;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

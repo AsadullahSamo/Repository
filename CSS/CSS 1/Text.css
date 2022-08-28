@@ -1,0 +1,51 @@
+#text{
+    width: 500px;
+    border: 1px solid black;
+    height: 300px; 
+}
+#text1{
+    writing-mode: vertical-lr;
+    font-size: 50px;
+}
+
+#t{
+    width: 500px;
+    border: 1px solid black;
+    color:blueviolet;
+    direction: rtl; 
+    text-align: center;  /* or justify to fit at all lines */
+}
+
+b{
+    color: red;
+    border: 1px solid red;
+    direction: rtl;
+}
+
+#tx{
+    border: 1px solid black;
+}
+img{
+    vertical-align: middle;           /* vertical-align works for img */
+}
+
+#text2{
+    text-decoration: underline;      /* or overline/linethrough/none */
+    text-transform: uppercase;       /* or lowercase/capitalize */
+    line-height: 30px;
+    border: 1px solid red;
+}
+#shadow{
+    font-size: 70px;
+    text-shadow: 10px 5px 7px coral;         /* horizontal vertical blur color */
+}
+
+/* other properties are
+1.text-indent (from how much px text starts from begining)
+2.letter spacing (space through each letter)
+3.word-spacing   (space through each word)
+4.white-space: pre;        (takes whitespace)       because HTML don't support whitespace
+and white-space: nowrap; (put text in only one line irrespective of how long it is)
+5.word-wrap: break-word;          (used when word goes out of container and we wanna adjust)
+6.text-shadow: horizontally away from text vertically blur color;
+horizontally and vertically can be in minus so shadow will go upward 

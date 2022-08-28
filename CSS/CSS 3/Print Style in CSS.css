@@ -1,0 +1,18 @@
+@media screen{    /* --> When at screen */
+    p{
+        font-size: 20px;
+    }
+}
+
+/* Press Ctrl+P to see effect and uncomment & comment for better understanding When at screen */
+@media print{    /* --> When at print */
+    p{
+        font-size: 30px;
+    }
+    img{
+        display: none;
+    }
+    div{
+        width: 50%;
+    }
+}

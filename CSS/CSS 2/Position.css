@@ -1,0 +1,46 @@
+/*
+Defines element position at webpage, have 4 types
+1. Static --> Default (normal flow)
+2. Relative:- Element moves through its relative position by your defining either top/bottom/left/right, but anyone can't occupy its original position
+3. Fixed:- Calculate from Viewport, used When we want something to be fixed even after scrolling, and leave its place
+4. Absolute:- Relative from its parent position (meants its parent should've applied by relative/fixed), and it leavse its original position
+
+other are top, bottom, left, right but before these either apply position: relative/fixed/absolute;
+*/
+
+body{
+    height: 1000px;     
+}
+#parent{
+    border: 1px solid red;
+    padding: 20px;
+    width: 50%;
+    margin: 100px;
+    position: relative;
+}
+/* if we want all these in one line we may use display: inline-block */
+#one{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#two{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+    position: relative;         /* it'll move 50px left and top from its currernt position     */
+    top: 50px;
+    left: 50px;
+}
+#three{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: inline-block;
+    position: fixed;     /* scroll to see effect */
+}

@@ -1,0 +1,40 @@
+/*
+Question
+If one element is styled by more than one rule, which style will be applicable
+
+Example:-                         p{ color: red; }
+<div>                             .red{ color: green; }
+<p class="red"> Text.... </p>     div .red{ color: blue; }
+</div>
+
+Here rule of specificity will decide which rule will be applied
+More specific value rule will get more value 
+
+General Rule:-
+1. !important will override everything
+2. inline will override everything except !important
+3. External will work according to specificity
+
+Specificity Rule:-
+1. (#) Id selector has highest value
+2. (*) Universal selector has lowest value
+
+Specificity Rule Trick (Point system)
+1. 10,000 points to !important
+2. 1000 to inline
+3. 100 to id
+4. 10 to class, attribute and pseudo-class
+5. 1 to element and pseudo-element 
+6. 0 for universal selector
+
+Solution to above question by point system trick
+Example:-                         (1point) p{ color: red; }
+<div>                             (10point) .red{ color: green; }
+<p class="red"> Text.... </p>     (1+10=11point) div .red{ color: blue; }
+Hence blue color will be applied
+
+Note:- If same rule is written 2 or more times in external sheet then last will be applicable
+</div>
+
+
+*/

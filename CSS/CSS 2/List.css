@@ -1,0 +1,18 @@
+ul{
+    list-style-type: square;
+}
+
+ol{
+    list-style-type: decimal-leading-zero;
+}
+
+li{
+    border: 1px solid black;
+    list-style-position: inside;
+}
+
+/* 
+Other properties are
+    list-style-image: url();
+    list-style-position: inside/outside;         its effect can be seen by border
+*/

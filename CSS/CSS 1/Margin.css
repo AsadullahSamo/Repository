@@ -1,0 +1,46 @@
+.margin{      /* margin collapse but only top and bottom (means when we give one element 20px margin-bottom and other element margin-top 50 then it'll not be margin 70 but it'll be 50px the higher one of them) */
+    border: 1px solid red;
+    padding: 25px 50px 30px 70px;
+}
+
+body{
+    border: 5px dotted black
+}
+
+#marg{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 10%;
+}
+
+
+
+.margi{
+    border: 1px solid red;
+    padding: 25px 50px 30px 70px;
+}
+
+body{
+    border: 5px dotted black
+}
+
+#mrg{
+    margin: -25px;              /* margin can have -ve value but padding can't have -ve value */
+}
+
+
+
+.marg{
+    border: 1px solid red;
+    padding: 25px 50px 30px 70px;
+}
+
+body{
+    border: 5px dotted black
+}
+
+#mag{
+    width: 200px;
+    margin: 20px auto;
+}

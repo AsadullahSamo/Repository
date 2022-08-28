@@ -1,0 +1,27 @@
+/*
+Float:- use to throw any element to right or left and it comes out of container
+To resolve problem of containter, do overflow: auto;
+Clear:- When two or more elements have same float position then use "clear: left/right/both;" so as to not mix them up
+*/
+
+/*  Float example  */
+img{
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+#img1{
+    float: right;
+}
+#img2{
+    float: left;
+}
+
+/*  Clear example  */
+#img3{
+    float: right;
+}
+#img4{
+    float: right;
+    clear: right;
+}

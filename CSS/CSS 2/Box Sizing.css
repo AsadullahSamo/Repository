@@ -1,0 +1,18 @@
+#div1{
+    background-color: blueviolet;
+    width: 600px;
+    height: 150px;
+}
+#div2{       /* here we can clearly see that content size is decreased      */
+    background-color: chocolate;
+    width: 600px;
+    height: 150px;
+    padding: 50px;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+
+/* 
+If we give same width and height to both but give padding to div2 then it'll yet increase in size due to padding
+If we want that even after giving padding it'll maintain its size, by decreasing size of content we use box-sizing
+/*

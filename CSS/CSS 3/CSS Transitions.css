@@ -1,0 +1,44 @@
+/* Two properties are compulsory when applying transition
+1. To whom property to apply transition   2. transition-duration: time in s/ms;
+*/
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 1px solid black;
+    margin: 100px;
+    display: inline-block;
+}
+/* We may use transition to acheive smooth effect on hover and many more   */
+#div1:hover{
+    height: 200px;
+    transition-property: height;     /* OR transition-property: all; */
+    transition-duration: 1s;      /* or in ms */
+}
+#div2:hover{
+    background-color: green;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+/* Multiple Transition property and transtion-delay */
+#div3:hover{
+    background-color: green;
+    transition-property: all;
+    width: 200px;
+    transition-duration: 1s;
+    transition-delay: 500ms;      /* How late to start transition */
+}
+/* transition-timing-function */
+#div4:hover{
+    transition-property: width;
+    transition-duration: 500ms;
+    width: 200px;
+    transition-timing-function: step-end;  /* decides fast and slow transition, slow in start fast in end OR fast in start fast in end OR slow in between and fast in start & end etc */
+}
+
+/* Short hand 
+    transition: property duration timing-function delay, property duration timing-function delay
+    separate for two or more properties by using comma as in above and like below
+    transition: width 2s, height 3s;
+*/

@@ -1,0 +1,12 @@
+#ab{
+    background-image: url('E:/My Data/MY MS FILES/OBS studio.jpg'), url('E:/My Data/MY MS FILES/Audacity.jpg');    /* for two images we have to give comma like url(), url() (and also we have to give background-position necessarily)*/
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;          /* or we may give background-position in px* or % (first px will be for X-axis and 2nd will be for Y-axis) */
+
+}
+/* background_size: cover; used to fix image to whole screen but it distorts image */
+/* background_size: contain; fix image to screen although not at whole but it does not distort it */
+/* 
+shortcut for all these is 
+    background: color image repeat attachment position;

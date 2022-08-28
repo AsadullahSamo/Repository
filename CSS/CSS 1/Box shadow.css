@@ -1,0 +1,22 @@
+/* box shadow is giving element a shadow 
+    Syntax-->    box-shadow: horizontal vertical blur spread-radius color inset/outset
+*/
+
+#shadow{
+    border: 1px solid red;
+    width: 500px;
+    background-color: yellowgreen;
+    margin: 100px;
+    padding: 20px;
+    box-shadow: 10px 20px grey;
+}
+
+#shade{
+    border: 1px solid red;
+    width: 500px;
+    background-color: yellowgreen;
+    margin: 100px;
+    padding: 20px;
+    box-shadow: 10px 20px grey, -10px -20px blue ;        /*  for multiple shadow */ 
+}
+

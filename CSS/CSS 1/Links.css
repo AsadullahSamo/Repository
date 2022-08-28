@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+}
+
+a:link{                                        /*normal state */
+    color: yellowgreen;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: orange;
+}
+
+a:active{                                       /* when click */
+   color: red;
+}

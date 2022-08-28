@@ -1,0 +1,12 @@
+/* some filter properties are 
+    filter: brightness(in %), contrast(in %), blur(in px), drop-shadow(same as box-shadow values), grayscale(in %)--> for black&white; and
+    filter: hue-rotate(in deg for color), invert(in %), opacity(in %), saturate(in %), sepia(in %)
+*/
+
+#filter{
+    filter: hue-rotate(90 deg);    
+}
+
+
+
+

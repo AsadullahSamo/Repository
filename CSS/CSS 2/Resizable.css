@@ -1,0 +1,17 @@
+/*
+    Resizeable has properties like
+    resize: both/none/horizontal/vertical; 
+    overflow should be auto/scroll/hidden when we resize
+*/
+
+#overflow{
+    border: 1px solid red;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+    resize: horizontal;     /*will resize horizontal only */
+}
+
+textarea{
+    resize: none;
+}

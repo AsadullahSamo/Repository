@@ -1,0 +1,18 @@
+html{
+    font-size: 10px;
+}
+
+#parent{
+   font-size: 10vw;
+}
+
+#child{
+    font-size: 2rem;
+}
+
+/* Relative units in CSS
+1. Em --> Relative to size of its parent
+2. Rem --> Only relative to root(html tag) size
+3. Vh --> 1% of view port height
+4. Vw --> 1% of view port width
+5. % --> Relative to parent

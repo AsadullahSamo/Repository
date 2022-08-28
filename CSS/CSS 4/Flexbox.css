@@ -1,0 +1,63 @@
+/*
+We can make flexible and responsive design by using flexbox withoutW using float and position
+*/
+
+.flex-container{
+    background-color: indianred;
+    display: flex;       /* Treat all your childs as flex(flexible) */
+    /* flex-direction: column-reverse;    decides how to float these */
+    /* flex-flow: row wrap;
+    align-content: center;
+    justify-content: center; */
+    /* justify-content: space-between; */
+    height: 70vh;
+    /* align-content: center; */
+}
+.flex-child{
+    background-color: wheat;
+    margin: 20px;
+    padding: 20px;
+    width: 100px;   /* to make boxes small in size */
+    text-align: center;
+}
+
+#one{
+    /* order: 2; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 3; */
+    align-self: flex-start;
+}
+#two{
+    /* order: 3; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+    /* flex-basis: 300px; */
+    align-self: center;
+}
+#three{
+    /* order: 1; */
+    /* flex-grow: 1; */
+    align-self: flex-end;
+}
+
+/* other properties are 
+A.    flex-direction: row, column, row-reverse, column-reverse;
+    if items are increased it make itself adjust accordingly
+1.  flex-wrap: wrap;   --> It takes width defined and arrange remaining items downward
+2.  flex-wrap: wrap-reverse/nowrap;
+
+B. flex-flow: direction wrap;    --> shorthand for direction and wrap
+C. justify-content: flex-start, center, flex-end;    --> To arrange content and it works for horizontally (put 3 contents and see effect)
+C, 2. justify-content: space-around;  --> how much space will be around boxes and between
+C, 3. justify-content: space-between, space-evenly;
+D.    align-items: stretch/center/flex-start/flex-end; --> by default is stretch
+E.    align-content --> It works vertically whereas justify-content works horizontally
+E, 1. align-content: stretch/space-between/space-around/center/flex-start/flex-end; 
+
+  Above properties were all for parent, now we use flex properties for child
+A. 1. order: 1/2/3/etc;  --> Defines order for child to display
+B. 1. flex-grow: 1/2/etc;  --> How much it'll grow if it gets enough space
+C. 1. flex-shrink: 2; --> how much times it'll decrease from others
+D. 1. flex-basis: 300px; --> how much initial width it'll take
+E. 1. align-self: flex-start/center/flex-end;  --> it'll self align itself accordingly we decide
+*/

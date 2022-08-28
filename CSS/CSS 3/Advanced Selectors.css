@@ -1,0 +1,86 @@
+/*
+1. ID Selector:- 
+    #one{
+        color: red;
+    }
+2. Class Selector:- 
+    .one{
+        background-color: yellowgreen;
+    }
+3. Element Selector:- 
+    p{
+        width: 250px;
+    }
+4. Pseudo Class and Pseudo element selectors:- 
+    a:hover{
+        color: red;
+    }
+    a::first-line{
+        color: red;
+    }
+5. Attribute selector:-
+    a[href="https://example.com"]{     can be id or class too (in this case is element "a")
+        color: indigo;
+    }
+6. Universal Selector:-  --> Used rarely but helpful in debugging by giving "border: 1px solid red;"
+       *{
+        color: red;
+    } 
+7. Combinator Selector:- 
+    It has 4 selectors in it
+    a. Descendant Combinatory (Child at any stage)
+    .red-p span{
+        color: green;
+    }
+    b. Child Combinatory (Direct Child)
+    .red-p>span{
+        color: green;
+    }
+    c. Adjacent Combinatory (right after sibling)
+    .red-p+h1{
+        color: green;
+    }
+    d. General Sibling Combinatory (all siblings)
+    .red-p~h1{
+        color: green;
+    }
+8. Add Selector:-
+    .red-p, h1{       make all p & h1 red, can be in id and class too
+        color: green;
+    }
+*/
+
+li{
+    color: red;
+}
+#list2{
+    color: green;
+}
+.list5{
+    color: blue
+}
+a:hover{
+    color: greenyellow;
+}
+p::first-line{
+    color: violet;
+}
+input[placeholder="Enter number"]{
+    color: chocolate;
+}
+div a{      /* --> child at any stage */
+    color: red;
+}
+div>h1{    /* --> Direct child */
+    color: rebeccapurple;
+}
+div + a{   /* Right after sibling */
+    border: 3px solid red;
+}
+div ~ input{   /* All Siblings */
+    border: 3px solid green;
+}
+
+p, h3, h5{
+    color: cadetblue;
+}

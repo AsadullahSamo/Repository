@@ -1,0 +1,21 @@
+#ab{
+    border-style: solid;         /* it is necessary without it we can't give any other property */
+    border-width: 5px 10px 2px 7px;
+    border-color: red green blue yellow;     /* everything will be clockwise in CSS when we give all 4 properties i.e top right bottom left*/
+}
+
+#cd{
+    border-top-style: solid;
+    border-top-width: 10px;
+    border-top-color: blue;
+}
+
+#ef{
+    border: 5px solid red;
+    border-radius: 10px 20px;        /* when we give two first will be for top bottom and second for left right */
+}
+
+#g{
+    border: 5px solid red;
+    border-radius: 10px 20px 30px 40px;
+}

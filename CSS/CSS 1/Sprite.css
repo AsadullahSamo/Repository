@@ -1,0 +1,24 @@
+/* 
+   Image sprite:- When some images are combined to form one image and in CSS we break them again to small images
+   Image sprite can only be used as background images
+   This should be done when images are in KB
+*/
+
+#sprite{
+    background-image: url('E:/My Data/MY MS FILES/Flags.png');
+    height: 128px;         /*  here image appears because we have stopped height to 128px */
+    background-repeat: no-repeat;
+}
+
+
+
+#sprite-css{
+    background-image: url('E:/My Data/MY MS FILES/Flags.png');
+    height: 128px;
+    background-repeat: no-repeat;
+    background-position: 0px -288px;
+}
+
+
+
+

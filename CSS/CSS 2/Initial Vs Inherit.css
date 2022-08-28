@@ -1,0 +1,13 @@
+/* we have two property values used with almost all CSS  */
+#gold{
+    color: violet;
+}
+#red{
+    color: red;
+}
+#initial{
+    color: initial;          /*  it'll take by default value     */
+}
+#inherit{
+    color: inherit;         /*   it'll inherit from its parent   */
+}

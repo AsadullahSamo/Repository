@@ -1,0 +1,23 @@
+/*
+In Pseudo elements we style a specific poriton
+It has two colons
+    Syntax:-
+       Selector::pseudo-element{
+
+       }
+*/
+
+p::first-letter{
+    font-size: 35px;
+    color: red;
+}
+h1::before{
+    content: url('E:/My Data/My MS Files/Davinci Resolve.jpg');
+}
+::selection{      /* when user selects anything (:: denotes that this is for entire file)    */
+    color: red;
+    background-color: yellow;
+}
+/* 
+OR first-line
+*/

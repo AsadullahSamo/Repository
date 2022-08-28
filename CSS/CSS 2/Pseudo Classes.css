@@ -1,0 +1,19 @@
+/*
+Special state of element is pseudo class
+Syntax:
+    Selector:pseudo-class{
+
+    }
+    like we used in link as "hover", "active", "visited"
+*/
+
+li:first-child{          /* more used when dynamic generation  */
+    color: red;
+}
+li:nth-child(5){         /* or can pass odd/even/or pattern like (2n + 1)/(3n+0) etc               */
+    color: aqua;
+}
+
+input:focus{
+    border: 3px solid red;
+}

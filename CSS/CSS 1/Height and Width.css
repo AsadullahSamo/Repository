@@ -1,0 +1,14 @@
+body{
+    border: 1px solid red;
+    height:1000px;
+}
+#div1{
+    background-color: blueviolet;
+    height: 50%;       /* it will take accordingly its parent height here 50% of body */
+    width: 70%;
+    max-width: 300px;         
+    max-height: 500px;
+    min-width: 100px;
+    min-height: 50px;
+
+}

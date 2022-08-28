@@ -1,0 +1,24 @@
+/*  
+Can be either applied to image or video
+this(object fit) is for foreground image
+*/
+
+#image1{
+    border: 1px solid red;
+    width: 500px;
+    height: 400px;
+    object-fit: cover;           /* same as background-size: contain; */
+    object-position: top right;
+}
+ 
+#image2{
+    border: 1px solid red;
+    width: 500px;
+    height: 400px;
+    object-fit: contain;           /* same as background-size: contain; */
+    object-position: top right; 
+}
+
+/*
+Here if we use "object-fit: cover;"  then ratio is maintained but image will be distorted so we use "object-position: top center/ bottom right/etc;" to see distorted image
+*/

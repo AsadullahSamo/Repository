@@ -1,0 +1,17 @@
+@font-face{
+    font-family: abc;
+    src: url('E:/My Data/CSS/fonts/GreatVibes-Regular.ttf'); /* to check whether path is correct or not (go to browser>view page source>then replace style.css with url and if its downloadable then link is correct)*/
+}
+
+h1{
+    font-family: abc;
+    font-weight: 800;          /* or regular/bold (values from 100 to 1000)*/
+}
+                                /* or give , and other fonts so if one can't be find other will be supported */ 
+p{
+    font-family: abc;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+/*  Or select the font, paste link from google into head tag and copy font-family to CSS of that */

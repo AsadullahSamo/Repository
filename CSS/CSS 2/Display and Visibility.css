@@ -1,0 +1,31 @@
+/*
+Mainly display property value has 4 important values
+1. Block  --> Like <p>, h1-h6, div have block as default display property
+Properties of block:-  New line starts, takes full width, we may give height and width to this
+2. Inline --> a, img, span have inline as default display property
+Properties of Inline:-  Starts from where it is called, takes width needed, we may not give height and width to this
+3. Inline block
+Properties of Inline-block:-  no New line starts, do not take full width, we may give height and width to this
+4. None:-  Used to hide any element 
+Also we can use visibility: hidden;  to acheive same effect but it keeps its space
+We can interchange block element into inline and inline into block
+*/
+
+.block{
+    border: 1px solid red;
+    width: 50%;
+    height: 100px;
+}
+.inline{
+    border: 1px solid red;
+    width: 50%;
+    height: 100px;
+    display: inline;         /* now these two divs are converted to inline */
+}
+/* #div1{
+    display: none;
+} */
+
+/* 
+comment both height and width, & make dispaly: inline-block and see and then uncomment again;  to see inline-block effect
+*/

@@ -1,0 +1,11 @@
+#div1{
+    border: 1px solid grey;
+    height: 600px;
+    background-image: linear-gradient(to top left, red, green, yellow);      /*  or can be in degree instead of to top left etc like --> background-image: linear-gradient(120deg, red, green, yellow); */
+}
+
+#div2{
+    border: 1px solid grey;
+    height: 600px;
+    background-image: radial-gradient(circle, blue 10%, green 35%, rgb(255, 0, 234));   /* shape is by default eclipse, so we here used circle  */
+}
