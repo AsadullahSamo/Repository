@@ -44,12 +44,12 @@ public class Lecture_07_ClassWork {
         s1 = new Student();
         s2 = new Student("Asad", "21SW", (byte)17);
         s3 = new Student(s2);
-        System.out.println(s1);
-        System.out.println(s2);
-        System.out.println(s3);
+//        System.out.println(s1);
+//        System.out.println(s2);
+//        System.out.println(s3);
         s4 = new Student(s3);        // copy object s3 to s4
         s4 = s3.changeAge();         // call changeAge() method to change age by +5 and put all other attributes same
-        System.out.println(s4);     //  print s4
+//        System.out.println(s4);     //  print s4
         s5 = new Student("Saad", "19SW");
         System.out.println(s5);      // Even we passed name Saad  but yet it'll print Ali because we changed object name parameter and objects are passed by reference
         s6 = new Student(s3);

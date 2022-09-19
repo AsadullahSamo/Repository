@@ -2,8 +2,8 @@ package ClassPrograms;
 class University{
     String uniName = "MUET";
 
-    static class Student{          // this is method of class Student
-        static void display(){
+    static class Student{
+        static void display(){    // this is method of class Student
             // To used non-static attribute (uniName) in static method we create object of class University (otherwise it'll throw error)
             University u1 = new University();
             String temp = u1.uniName;

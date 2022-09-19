@@ -43,7 +43,7 @@ class University{
         void display(){
             System.out.println("Student name is: "+sname);
             System.out.println("Department name is: "+sdept.dname);
-        }     // end of method=
+        }     // end of method display()
     }    // end of class Students
 
     class Departments{
