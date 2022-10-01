@@ -1,4 +1,4 @@
-package Lab_13_Task;
+package Lab_11_12_Task;
 
 import org.json.simple.JSONObject;
 
@@ -8,17 +8,17 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileWriter;
 import java.io.Writer;
-import java.sql.*;
 
 class Form extends JFrame implements ActionListener {
     JLabel jl1, jl2, jl3, jl4, jl5, jl6, jl7, jl8;
     JTextField roll_no, name, batch, section;
     JRadioButton jb1, jb2;
-    JButton b1, b2, insert, fetch;
+    JButton b1, b2;
     JCheckBox checkBox1, checkBox2, checkBox3, checkBox4;
     JTextArea address;
     JComboBox country;
-    public Form() throws SQLException {
+
+    public Form() {
         setSize(620, 620);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
@@ -86,16 +86,10 @@ class Form extends JFrame implements ActionListener {
 
         b1 = new JButton("Save");
         b2 = new JButton("Print");
-        insert = new JButton("Insert");
-        fetch = new JButton("Fetch");
         b1.setFocusable(false);
         b2.setFocusable(false);
-        insert.setFocusable(false);
-        fetch.setFocusable(false);
         b1.setBounds(50, 500, 75, 25);
         b2.setBounds(150, 500, 75, 25);
-        insert.setBounds(250, 500, 75, 25);
-        fetch.setBounds(350, 500, 75, 25);
 
         add(jl1);
         add(name);
@@ -119,7 +113,6 @@ class Form extends JFrame implements ActionListener {
         add(country);
         add(b1);
         add(b2);
-        add(insert);          add(fetch);
 
         b1.addActionListener(this);
         b2.addActionListener(this);
@@ -157,7 +150,7 @@ class Form extends JFrame implements ActionListener {
         jsonObject.put("Country: ", country.getSelectedItem());
         jsonObject.put("Address: ", address.getText());
 
-        if (e.getSource() == b1) {
+            if (e.getSource() == b1) {
             try {
                 writer = new FileWriter("Task.json");
                 writer.write(jsonObject.toJSONString());
@@ -190,7 +183,7 @@ class Form extends JFrame implements ActionListener {
                 ie.printStackTrace();
             }
         }
-        else if (e.getSource() == b2) {
+         else if (e.getSource() == b2) {
             System.out.println(name.getText());
             System.out.println(roll_no.getText());
             System.out.println(batch.getText());
@@ -214,46 +207,16 @@ class Form extends JFrame implements ActionListener {
             } else if (checkBox4.isSelected()) {
                 System.out.println(checkBox4.getText());
             }   // end of if else conditional
-            System.out.println(address.getText());
-            System.out.println(country.getSelectedItem());
-        } else if(e.getSource()==insert){
-
-        } else if(e.getSource()==fetch){
-
-        }      // end of if else ladder
-
+         System.out.println(address.getText());
+         System.out.println(country.getSelectedItem());
+        }      //  end of if-else ladder
     }         //  end of actionPerformed() method
 }            //   end of class Form
 
 public class Student_Registration_Form {
-    static void insertDatabase() throws ClassNotFoundException, SQLException {
-        String url = "jdbc:mysql://localhost:3306/jdbc";       // where last jdbc is Database name in MySQL
-        String uname = "root";
-        String pass = "asad56@mysql.com";
-
-        String query = "SELECT * FROM employee";
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection com = DriverManager.getConnection(url, uname, pass);        // In XAMPP we have not to store password in getConnection,but rather we use empy string at place of password parameter
-        Statement st = com.createStatement();
-        ResultSet rs = st.executeQuery(query);
-//        String update = "INSERT INTO 'registration form' VALUES('name.getText()', 'roll_no.getText()', 'batch.getText()', 'section.getText()')";
-//        int count = st.executeUpdate(update);
-//        System.out.println(count+" Rows affected");
-
-        while(rs.next()) {
-            String name = rs.getString(2);
-            int id = rs.getInt("Emp_id");
-            System.out.print(id+" | ");
-            System.out.println(name);
-        }
-        st.close();
-        com.close();
-
-    }   // end of method database()
-
-    public static void main(String[] args) throws SQLException, ClassNotFoundException {
+    public static void main(String[] args) {
 
         Form form = new Form();
-        insertDatabase();
+
     }
 }
