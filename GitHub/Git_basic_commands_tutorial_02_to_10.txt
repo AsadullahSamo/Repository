@@ -1,0 +1,50 @@
+pwd --> To see current working directory
+cd /c --> to move to local disk C:     (same is true for E:)
+git config --global user.name "Asad" (to change user name)
+git config  user.name --> To see user name  (same for email)
+git config --list  (to see list)
+
+Tutorial #03   Three Stage Architecture
+
+Commit:- A commit, or "revision", is an individual change to a file (or set of files). When you make a commit to save your work, Git creates a unique ID (a.k.a. the "SHA" or "hash") that allows you to keep record of the specific changes committed along with who made them and when.
+Staging area:- These files are also referred to as "untracked files." Staging area is files that are going to be a part of the next commit, which lets git know what changes in the file are going to occur for the next commit. The repository contains all of a project's commits.  (if we want that a file shouldn't go to next commit then don't put in stage) 
+
+Tutorial #04   Tracking our first git project
+git init --> to initialize git repository  (if you run it again it'll be reinitialized which we don't want) so always check git status before git init
+git status --> to check status of git repository
+git add --a  --> to add all Files to Staging Area
+git commit -m "Initial commit"  --> To commit all files sent to Staging area
+git log  --> To know which files you made commit
+Now if we made changes to First.txt and Github Excel.xlsx and Saved (see git status and it will show which files you modified)
+and we want to put only First.txt into staging area (because we may wanna work with .xslx file more) ,
+then write--> git add First.txt
+
+Tutorial #05  Cloning a remote git repository from github      (Remote= when taking something from internet)
+
+rm -rf .git --> To delete a git repository
+git clone url_here  folder_name--> To clone a repository from that source to our computer
+
+Tutorial #07
+touch file_name.extension --> To create a blank file
+Let's say if we wanna ignore a file that is generating random erros, to do so first create file .gitignore by using
+1. touch .gitignore     (and write file_name.extension of error generating file in .gitignore file, in this case write error.log in text document (.gitignore))
+*  After that error generating file will no longer be tracked
+2. if you wanna ignore all files with extension.log write, *.log , in .ignore file and save it 
+3. and to ignore folder write, folder_name/ in .gitignore file and save
+and if want just to ignore outer folder write, /dir/ in .gitignore file
+
+Tutorial #08 
+
+. git diff --> to see difference between working directory and staging area OR previous commit and staging area
+. git diff --staged --> To see previously committed files and current staging area
+
+Tutorial #09 :- Skipping The Staging Area 
+
+. git commit -a -m "Direct Commit"  --> To commit while skipping staging area 
+
+tutorial #10  Moving and renaming files in Git
+
+. git rm third.txt   --> to remove third.txt
+. git mv first.txt first_renamed.text   --> To rename first.txt to first_renamed.txt
+. git rm --cached db.accdb    --> To untrack db.accdb so as to not track it
+
