@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image map </title>
+</head>
+<body>
+    <img src="img/workplace.jpg" alt="Turkey and Pakistan" usemap="#workmap">
+    <map name="workmap">
+    <area shape="circle" coords="125,147,27" href="https://www.britannica.com/place/Pakistan" onclick="myfunction();">
+    <area shape="rect" coords="91,14,126,88" href="phone.htm" >
+    </map>    
+
+    <script> // in map we used Javascript function to alert onclick
+        function myfunction(){
+            alert("You clicked the coffee");
+        }
+
+    </script>
+</body>
+</html>
+

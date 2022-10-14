@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Javascript </title>
+</head>
+
+<body>
+    <button onclick="document.getElementById('demo').innerHTML = Date()"> Javascript </button>
+    <p id="demo"></p>
+
+    <button onclick="myFunction()"> Click me </button>
+    <p id="changeContent"> This is a demonstration</p>
+
+    <button onclick="style1()"> Change Styles </button>
+    <p id="changeStyle"> Javascript can change the style of an HTML element </p>
+
+    <img src="img/bulboff.jpg" alt="Bulb on" id="myImage"> <br><br>
+    <button onclick="light(1)"> Light on</button>
+    <button onclick="light(0)"> Light off</button>
+
+    <script>
+        function myFunction(){
+            document.getElementById('changeContent').innerHTML = "Hello Javascript";
+        }
+        function style1(){
+            document.getElementById('changeStyle').style.fontSize = "25px";
+            document.getElementById('changeStyle').style.color = "red";
+            document.getElementById('changeStyle').style.backgroundColor = "yellow";    
+        }
+        function light(sw){
+            var pic;
+            if(sw==0){
+                pic = "img/bulboff.jpg";
+            } 
+            else {
+                pic = "img/bulbon.jpg";
+            }
+            document.getElementById('myImage').src = pic;
+        }
+    </script>
+</body>
+
+</html>

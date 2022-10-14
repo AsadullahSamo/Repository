@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Use of JS to access id and class </title>
+</head>
+
+<body>
+    <h1 id="changeText"> Hello, World!</h1>
+    <button onclick="change()"> Change Text </button>
+    <br><br>
+
+    <button onclick="hide()"> Hide elements</button>
+    <h2 class="city"> Islamabad </h2>
+    <p> Islamabad is the capital of Pakistan </p>
+
+    <h2 class="city"> Riyaz </h2>
+    <p> Riyaz is the capital of Saudi Arabia</p>
+
+    <h2 class="city"> Istanbul </h2>
+    <p> Istanbul is the capital of Turkiye </p>
+    <script>
+        function change(){
+            document.getElementById('changeText').innerHTML = "Have a nice day!";
+        }
+        function hide(){
+            var x = document.getElementsByClassName('city');
+            for(var i=0; i<x.length; i++){
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
