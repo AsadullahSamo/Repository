@@ -1,0 +1,228 @@
+@keyframes shake {
+    10% { transform: rotate(50deg) scaleX(1);}
+    20% { transform: rotate(-0deg) scaleX(1);}
+    30% { transform: rotate(50deg) scaleX(1);}
+    40% { transform: rotate(-0deg) scaleX(1);}
+}
+@keyframes shake2 {
+    10% { transform: rotate(130deg) scaleX(1);}
+    20% { transform: rotate(-130deg) scaleX(1);}
+    30% { transform: rotate(130deg) scaleX(1);}
+    40% { transform: rotate(-130deg) scaleX(1);}
+}
+body{
+    background: linear-gradient(to right,#a6ddf2, #e5f8e3);
+    overflow: hidden;
+}
+#snow-piece-1{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 23em 0 0 20em;
+    border-left-color: #c3ede6;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    bottom: 28vh;
+    left: 0;
+    z-index: 1;
+    
+}
+#penguin-body{
+    background: linear-gradient(to right, #ebe8e8, #fdfdfd);
+    width: 10em;
+    height: 9em;
+    border-radius: 50%;   
+    position: absolute;
+    left: 40%;
+    top: 46%;
+    z-index: 1;
+}
+#penguin-head{
+    background-color: red;
+    width: 9em;
+    height: 8em;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 80%;
+    left: 5%;
+    background: linear-gradient(to right, #bbbbb5, #dcddd3);
+}
+#eye-1, #eye-2{
+    width: 20px;
+    height: 10px;
+    background: linear-gradient( black 50%, #ffffff 50%);
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    border-radius: 50%;
+}
+#eye-2{
+    position: absolute;
+    left: 60%;
+    background-color: red;
+}
+.mouth-1, .mouth-2{
+    position: absolute;
+    width: 20%;
+    height: 13px;
+    background-color: #ffa500;
+    border-radius: 50%;
+    top: 60%;
+    left: 40%;
+}
+.mouth-2{
+    margin-left: 1.5%;
+    width: 17%;
+    height: 10px; 
+    top: 67%;
+}
+.cheeks{
+    width: 16%;
+    height: 13px;
+    border-radius: 50%;
+    background-color: pink;
+    margin-top: -40%;
+    position: absolute;
+    top: 110%;
+    left: 15%;
+}
+#cheek2{
+    left: 70%;
+}
+#floor{
+    width: 100%;
+    height: 11em;
+    background: linear-gradient(to right, #59b0ec, #b3fdfe);
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#snow-piece-2{
+    width: 12em;
+    height: 10em;
+    background: linear-gradient(to left, #c9f0e4, #a3dfeb);
+    position: relative;
+    transform: skew(35deg);
+    left: 11em;
+    top: 17.5em;
+}
+#circle-1, #circle-2, #circle-3{
+    width: 80px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    left: 3%;
+    top: 10%;
+}
+#circle-2{
+    position: absolute;
+    left: 40%;
+    bottom: 20%;
+}
+#circle-3{
+    width: 90%;
+    height: 70%;
+    top: -54%;
+    left: 5%;
+    border-radius: 70% 70% 100% 100%;
+}
+#feet1, #feet2{
+    z-index: -2;
+    background-color: #ffa500;
+    width: 2.2em;
+    height: 1.5em;
+    border-radius: 50%;
+    transform: rotate(150deg);
+    position: absolute;
+    bottom: -14%;
+    left: 20%;
+}
+#feet2{
+    transform: rotate(-150deg);
+    position: absolute;
+    left: 58%;
+    bottom: -15%;
+}
+#circle-4{
+    position: absolute;
+    background-color: #949592;
+    width: 73px;
+    height: 55px;
+    left: 35px;
+    top: 105px;
+    border-radius: 50%;
+    z-index: -1;
+}
+#arm1, #arm2{
+    background-color: #949592;
+    width: 12%;
+    height: 6%;
+    position: absolute;
+    left: 35.5%;
+    top: 44%;
+    border-radius: 20px 0px 2px 50px;
+    transform: rotate(35deg);
+}
+#arm1{
+    animation: shake 2.5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+#arm1:hover{
+    background-color: red;
+    transform: rotate(-0deg) scaleX(1);
+}
+#arm2{
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    width: 8%;
+    border-radius: 20px 0px 2px 50px;
+    transform: rotate(-150deg) ;
+}
+.fa-heart{
+    color: indigo;
+}
+#text{
+    font-size: 30px;
+    color: #6a6969;
+    width: 50%;
+    font-family: Helvetica;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    top: 160px;
+}
+#sun{
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -200px;
+    left: 700px;
+}
+
+@media screen and (max-width: 768px){
+    #arm1{
+        width: 18%;
+        top: 43%;
+        left: 31%;
+        animation: shake 0s ease-in-out linear;
+        /* animation: shake2 2s ease-in-out  linear ; */
+    }
+    #arm1:hover{
+         transform: rotate(130deg) scaleX(1);
+    }
+    #arm2{
+        width: 15%;
+        top: 50%;
+        left: 57%;
+    }   
+    #snow-piece-2{
+        top: 17em;
+    }
+}

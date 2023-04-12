@@ -1,0 +1,59 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eeeeee;
+}
+#img-div{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 10px
+}
+#image{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.spacing{
+    width: 43%;
+    line-height: 27px;
+}
+#tribute-link{
+    color: #477cae; 
+    text-decoration: underline;
+}
+a:visited{
+    color: #74638f;
+}
+footer cite{
+    position: relative;
+    top: 45px;
+    left: 420px;
+    width: 43%;
+    line-height: 27px;
+}
+#img-caption{
+    position: relative;
+    left: 180px;
+    top: -7px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+h1, p, h3{
+    text-align: center;
+}
+#h3{
+    position: relative;
+    left: 25px;
+    top: 70px;
+    margin-bottom: 120px;
+}
+img{
+    margin: 0 100px 20px 150px;
+}
+ul li{
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-bottom: -30px;
+}

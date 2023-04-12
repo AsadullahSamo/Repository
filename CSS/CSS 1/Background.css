@@ -7,6 +7,7 @@
 }
 /* background_size: cover; used to fix image to whole screen but it distorts image */
 /* background_size: contain; fix image to screen although not at whole but it does not distort it */
+/* background-attachment: fixed/ scroll; */
 /* 
 shortcut for all these is 
     background: color image repeat attachment position;

@@ -15,7 +15,7 @@ B. More are
 #fun{
     background-color: var(--primary-color);
     height: 200px;
-    width: calc(100% - 200px);    /* --> it will maintain its size whether we make browser small*/
+    width: calc(100% - 200px);    /* --> it will maintain its size whether we make browser small */
 }
 
 a{

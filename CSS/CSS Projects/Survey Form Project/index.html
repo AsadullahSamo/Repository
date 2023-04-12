@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title> Survey Form </title>
+</head>
+
+<body>
+  
+  <h1 id="title"> Survey Form </h1>
+  <p id="description"> Creating a form to complete Certification project </p>
+  
+  
+  <form id="survey-form">
+
+    <label for="name"> <label class="positioning">Name </label> <br> 
+    <input type="text" name="name" id="name" placeholder="Enter your name"required>
+    </label> <br>
+
+    <label for="email"> <label class="positioning">Email </label> <br>
+    <input type="email" name="email" id="email" placeholder="Enter your email"required>
+    </label> <br>
+
+    <label for="number"> <label class="positioning">Age(optional) </label> <br>
+    <input type="number" name="number" id="number" min="10" max="99" placeholder="Age" required>
+    </label> <br>
+
+    <label for="dropdown"> <label class="positioning">Which option best describes your current role?</label> <br>
+    <select name="dropdown" id="dropdown" placeholder="Select current role" value="dropdown" required>
+      <option> Student </option>
+      <option> Full Time Job </option>
+      <option> Full Time Learner </option>
+      <option> Other </option>
+    </select>
+    </label> <br>
+
+<label class="positioning">Would you recommend freeCodeCamp to a friend? </label> <br>
+  <label for="definitely" class="new-position">
+  <input type="radio" name="review" id="definitely" value="definitely" class="inline"/> Definitely
+  </label> <br>
+  <label for="maybe" class="new-position"> 
+  <input type="radio" name="review" id="maybe" value="maybe" class="inline"/> Maybe
+  </label> <br>
+  <label for="not-sure" class="new-position">
+  <input type="radio" name="review" id="not-sure" value="not-sure" class="inline"/> Not Sure
+  </label> <br> <br>
+
+  <label class="positioning">What is your favorite feature of freeCodeC</label> amp?
+<label for="feature"> <br>
+    <select name="feature" id="feature" placeholder="Select an option" value="feature" required>
+      <option> Challenges </option>
+      <option> Projects </option>
+      <option> Community </option>
+      <option> Open source </option>
+    </select>
+    </label> <br>
+
+ <label class="positioning">What would you like to see improved? (Check all that apply) </label> <br>
+<label for="front-end" class="new-position">
+  <input type="checkbox" name="improve" id="front-end" value="front-end" class="inline"> Front-end-Projects
+  </label> <br>
+<label for="back-end" class="new-position">
+  <input type="checkbox" name="improve" id="back-end" value="back-end" class="inline"> Back-end-Projects
+  </label> <br>
+<label for="data-visualization" class="new-position">
+  <input type="checkbox" name="improve" id="data-visualization" value="data-visualization" class="inline"> Data Visualization
+  </label> <br>
+<label for="challenges" class="new-position">
+  <input type="checkbox" name="improve" id="challenges" value="challenges" class="inline"> Challenges
+  </label> <br>
+<label for="community" class="new-position">
+  <input type="checkbox" name="improve" id="community" value="community" class="inline"> Open Source Community
+  </label> <br>
+<label for="gitter-help-rooms" class="new-position">
+  <input type="checkbox" name="improve" id="gitter-help-rooms" value="gitter-help-rooms" class="inline"> Gitter help rooms
+  </label> <br>
+<label for="videos" class="new-position">
+  <input type="checkbox" name="improve" id="videos" value="videos" class="inline"> Videos
+  </label> <br>
+<label for="city-meetups" class="new-position">
+  <input type="checkbox" name="improve" id="city-meeetups" value="city-meetups" class="inline"> City Meetups
+  </label> <br>
+<label for="wiki" class="new-position">
+  <input type="checkbox" name="improve" id="wiki" value="wiki" class="inline"> Wiki
+  </label> <br>
+<label for="forum" class="new-position">
+  <input type="checkbox" name="improve" id="forum" value="forum" class="inline"> Forum
+  </label> <br>
+<label for="courses" class="new-position">
+  <input type="checkbox" name="improve" id="courses" value="courses" class="inline"> Additional Courses
+  </label> <br> <br>
+  
+  <label for="comments"> <label class="positioning">Any comments or suggestions? </label> <br>
+  <textarea placeholder="Enter your comment here..." id="comments" name="comments" rows="7" cols="40"> </textarea>
+  </label> <br>
+
+  <label for="submit"> 
+    <input type="submit" name="submit" id="submit" value="Submit">
+  </label> <br>
+
+  </form>
+
+</body>  
+</html>

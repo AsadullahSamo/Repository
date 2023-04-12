@@ -1,0 +1,96 @@
+#green{
+    background-color: #00471b;
+    height: 300px;
+    width: 55%;
+    border-radius: 10px;
+    margin: 30vh auto;
+}
+#white{
+    background-color: #ffffff;
+    width: 50%;
+    height: 180px;
+    margin-left: 20px;
+    margin-top: 35px;
+    border-radius: 0 0 5px 5px;
+    border: 3px solid black;
+    position: absolute;
+    top: 250px;
+    left: 310px;
+}
+.stripes{
+    display: inline-block;
+    height: 100%;
+    width: 4px;
+    background-color: rgb(4, 4, 4);
+    margin-left: 40px;
+}
+.stripes:first-of-type{
+    margin-left: 50px;
+}
+
+#button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8, #button9, #button10{
+    background-color: #1d1e22;
+    display: inline-block;
+    height: 60%;
+    width: 30px;
+    overflow: hidden;
+}
+#button1{
+    position: absolute;
+    top: 0;
+    left: 36px;
+}
+#button2{
+    position: absolute;
+    top: 0;
+    left: 84px;
+}
+#button3{
+    position: absolute;
+    top: 0;
+    left: 180px;
+}
+#button4{
+    position: absolute;
+    top: 0;
+    left: 228px;
+}
+#button5{
+    position: absolute;
+    top: 0;
+    left: 276px;
+}
+#button6{
+    position: absolute;
+    top: 0;
+    left: 372px;
+}
+#button7{
+    position: absolute;
+    top: 0;
+    left: 420px;
+}
+#button8{
+    position: absolute;
+    top: 0;
+    left: 518px;
+}
+#button9{
+    position: absolute;
+    top: 0;
+    left: 566px;
+}
+#button10{
+    position: absolute;
+    top: 0;
+    left: 614px;
+}
+
+@media (max-width: 768px) {
+    #green {
+        
+    }
+    .stripes {
+      width: 50px;
+    }
+}

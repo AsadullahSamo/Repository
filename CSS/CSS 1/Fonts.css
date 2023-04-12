@@ -1,6 +1,6 @@
 @font-face{
     font-family: abc;
-    src: url('E:/My Data/CSS/fonts/GreatVibes-Regular.ttf'); /* to check whether path is correct or not (go to browser>view page source>then replace style.css with url and if its downloadable then link is correct)*/
+    src: url('fonts/GreatVibes-Regular.ttf'); /*to check whether path is correct or not (go to browser>view page source>then replace style.css (or whatever name is of file in link href) with url and if its downloadable then link is correct) */
 }
 
 h1{

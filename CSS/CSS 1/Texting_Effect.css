@@ -1,0 +1,25 @@
+@keyframes newEffect{
+    0% { background-color: red; }
+    15% {transform: rotate(30deg);  background-color: aquamarine;  }
+    30% {  margin-left: 1150px;}
+    50% { background-color: aqua; transform: rotate(0deg);}
+    75% {transform: rotate(180deg);}
+}
+
+#div1{
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 27px;
+    text-align: center;
+    color: white;
+    font-style: bold;
+    animation-name: newEffect;
+    animation-duration: 10s;
+}
+
+/* #div1:hover{
+} */

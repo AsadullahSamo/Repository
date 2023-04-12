@@ -3,7 +3,7 @@ Defines element position at webpage, have 4 types
 1. Static --> Default (normal flow)
 2. Relative:- Element moves through its relative position by your defining either top/bottom/left/right, but anyone can't occupy its original position
 3. Fixed:- Calculate from Viewport, used When we want something to be fixed even after scrolling, and leave its place
-4. Absolute:- Relative from its parent position (meants its parent should've applied by relative/fixed), and it leavse its original position
+4. Absolute:- Relative from its parent position (meants its parent should've applied by relative/fixed), and it leave its original position
 
 other are top, bottom, left, right but before these either apply position: relative/fixed/absolute;
 */
@@ -43,4 +43,6 @@ body{
     background-color: black;
     display: inline-block;
     position: fixed;     /* scroll to see effect */
+    top: 15px; 
+    right: 15px;
 }

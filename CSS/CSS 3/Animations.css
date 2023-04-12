@@ -62,7 +62,7 @@ We define key frame before this */
     animation-iteration-count: infinite;
 }
 
-/* other properties of animation are 
+/*  other properties of animation are 
     animation-delay: 2s;  --> How delay animation starts
     animation-iteration-count: 3/4/infinite; --> How much time animation occurs
     animation-timing-function: ease/ease-in;

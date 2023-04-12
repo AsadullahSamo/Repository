@@ -5,6 +5,7 @@
 */
 
 #wrapper{
+    /* display: inline-block; */
     padding: 20px;
     margin: 100px;
     background-color: yellowgreen;
@@ -19,17 +20,18 @@ a{
 a:hover{
     display: inline-block;
     /* transform: translate(50px, 50px); */
-    transform: rotate(25deg);
+    /* transform: rotate(25deg); */
     /* transform: scale(2, 0);    transform: scaleX(2);--> for increase/decrease width only and scaleY for height */
     transform: skew(20deg, 10deg);    
 }
 
 /* properties of transform
-transform: translate(12, 25) --> Takes two parameters, first how much away from X-axis and 2nd away from Y-axis, can have -ve value too
+transform: translate(12px, 25px) --> Takes two parameters, first how much away from X-axis and 2nd away from Y-axis, can have -ve value too
 transform: rotate(20deg); --> How much degree to rotate, can be in -ve value too
 transform: scale(2, 5);  --> Used to increase size or decrease size and takes two parameters, first multiply with width and second with height
 transform: skew(20deg, 50deg) OR skewX(15deg) OR skewY(15deg);
 transform-origin: 15% 20% OR left OR top right; --> to decide from where to apply transform
-or short hand-->
-transform: matrix(scaleX(), skewX(value not in deg), skewY(), scaleY(), translateX(), translateY())
+
+or short hand of all these transform properties are-->
+transform: matrix(scaleX(), skewY(value not in deg), skewX(), scaleY(), translateX(), translateY())
 */

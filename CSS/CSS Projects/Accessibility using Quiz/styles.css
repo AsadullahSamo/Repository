@@ -1,0 +1,122 @@
+html{
+    font-size: 16px;
+}
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f1f0f0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+ul{ 
+     list-style-type: none;
+     overflow: auto;
+     background-color: #1b1b32
+}
+.right{
+    padding: 10px 35px;
+    color: white;
+    float: right;
+}
+select{
+    width: 10%;
+    position: relative;
+    bottom: 17px;
+}
+.heading{
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    left: 320px;
+    color: #f1be32;
+}
+textarea{
+    position: relative;
+    bottom: 16px;
+}
+.position-main{
+    position: relative;
+    bottom: 56px;
+}
+h1{
+    position: relative;
+    left: 228px;
+}
+label{
+    position: relative;
+    left: 25%;
+}
+input[type="text"], input[type="email"], input[type="date"]{
+    height: 26px;
+    width: 370px;
+    margin-top: 12px;
+}
+h2{
+    font-family: Verdana, sans-serif;
+    border-bottom: 4px solid #dfdfe2;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+li a{
+    text-decoration: none;
+}
+input[type="email"]{
+    position: relative;
+    left: 3px;
+}
+input[type="date"]{
+    position: relative;
+    left: 1px;
+}
+.spacing{
+    position: relative;
+    left: 258px;
+}
+input[type="radio"]{
+    position: relative;
+    left: 0;
+}
+input[type="submit"]{
+    height: 60px;
+    width: 20%;
+    display: block;
+    border: 3px solid black;
+    font-size: 22px;
+    background-color: #d0d0d5;
+    margin: 40px auto;
+    padding: 15px;
+}
+footer{
+    background-color: #1b1b32;
+    width: 100%;
+}
+li a:hover{
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
+footer p{
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px){
+    label{
+        left: 5%;
+    }
+    .spacing{
+        left: 20px;
+    }   
+    .divider{
+        left: 0px;
+        width: 50px;
+    }
+    .heading{
+        /* visibility: hidden; */
+        left: -200px;
+    }
+}

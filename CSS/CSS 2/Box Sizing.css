@@ -2,6 +2,7 @@
     background-color: blueviolet;
     width: 600px;
     height: 150px;
+    box-sizing: content-box;
 }
 #div2{       /* here we can clearly see that content size is decreased      */
     background-color: chocolate;

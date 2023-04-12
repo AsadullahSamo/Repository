@@ -1,0 +1,75 @@
+body{
+    height: 1000px;
+}
+@keyframes square-rotate {
+    25% { background-color: indigo;
+        transform: rotate(90deg); }
+    50% { background-color: yellow;
+        transform: rotate(180deg); }
+    75% { background-color: red;
+        transform: rotate(270deg); }
+    100% { background-color: yellow;
+        transform: rotate(360deg); }
+}
+@keyframes circle-rotate {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+    
+}
+
+main div.circle{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 3em auto;
+    border-radius: 50%;
+    animation: circle-rotate 10s linear infinite;
+}
+main div #line-1{
+    width: 100%;
+    transform: rotate(120deg);
+    margin-top: 15.5em;
+    border: 1px solid black;
+}
+main div #line-2{
+    width: 100%;
+    transform: rotate(240deg);
+    border: 1px solid black;
+}
+main div #line-3{
+    width: 100%;
+    transform: rotate(0deg);
+    margin-top: -0.2em;
+    border: 1px solid black;
+}
+main .circle #square-1, main .circle #square-2, main .circle #square-3, main .circle #square-4, main .circle #square-5, main .circle #square-6{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    animation: square-rotate 10s infinite;
+}
+main .circle #square-1{
+    Top: 10%;
+    left: 90%;
+}
+main .circle #square-2{
+    bottom: 16%;
+    left: -10%;
+}
+main .circle #square-3{
+    top: 50%;
+    left: 90%;
+}
+main .circle #square-4{
+    bottom: 60%;
+    left: -10%;
+}
+main .circle #square-5{
+    top: 50%;
+    left: 90%;
+}
+main .circle #square-6{
+    bottom: 80%;
+    left: -10%;
+}

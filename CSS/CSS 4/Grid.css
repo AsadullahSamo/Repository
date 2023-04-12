@@ -46,3 +46,5 @@ D. 1. align-content: start/center/end/space-around/space-between/space-evenly;
 E. 1. grid-column-start: 1;     grid-column-end: 3;   --> to merge grid columns (used in child)
 E. grid-row-start: 1;   grid-row-end: 3;      --> to merge grid rows
 F. 1. grid-area: start-row-line/start-col-line/end-row-line/end-col-line;        --> use to merge rows and cols simultaneously
+G. grid-auto-rows: 100px; (if we expand height to 100px it'll manage by itself)
+H. grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));      // it'll fit boxes to right if enough space for thme

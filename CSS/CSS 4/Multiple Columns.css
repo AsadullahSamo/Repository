@@ -6,7 +6,7 @@ div{
     column-rule-color: red; */
     /* shorthand is same like border for above three commented properties */
     column-rule: 1px solid red;
-    column-width: 300px;
+    column-width: 200px;
 }
 h1{
     column-span: all;

@@ -5,40 +5,41 @@ We can make flexible and responsive design by using flexbox withoutW using float
 .flex-container{
     background-color: indianred;
     display: flex;       /* Treat all your childs as flex(flexible) */
-    /* flex-direction: column-reverse;    decides how to float these */
+    flex-direction: row-reverse;   /* decides how to float these */
     /* flex-flow: row wrap;
     align-content: center;
-    justify-content: center; */
-    /* justify-content: space-between; */
+    justify-content: center; 
+    justify-content: space-between;  */
     height: 70vh;
-    /* align-content: center; */
+    align-content: center;
 }
+
 .flex-child{
     background-color: wheat;
     margin: 20px;
     padding: 20px;
     width: 100px;   /* to make boxes small in size */
-    text-align: center;
+    text-align: center; 
 }
-
+/*
 #one{
-    /* order: 2; */
+    order: 2; 
     /* flex-grow: 1; */
-    /* flex-shrink: 3; */
+    /* flex-shrink: 3;
     align-self: flex-start;
 }
 #two{
     /* order: 3; */
     /* flex-grow: 2; */
     /* flex-shrink: 2; */
-    /* flex-basis: 300px; */
+    /* flex-basis: 300px; 
     align-self: center;
 }
 #three{
     /* order: 1; */
-    /* flex-grow: 1; */
+    /* flex-grow: 1; 
     align-self: flex-end;
-}
+} */
 
 /* other properties are 
 A.    flex-direction: row, column, row-reverse, column-reverse;

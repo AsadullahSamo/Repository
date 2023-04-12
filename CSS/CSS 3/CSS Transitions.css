@@ -12,8 +12,8 @@ div{
 }
 /* We may use transition to acheive smooth effect on hover and many more   */
 #div1:hover{
-    height: 200px;
     transition-property: height;     /* OR transition-property: all; */
+    height: 200px;
     transition-duration: 1s;      /* or in ms */
 }
 #div2:hover{
@@ -31,10 +31,10 @@ div{
 }
 /* transition-timing-function */
 #div4:hover{
-    transition-property: width;
-    transition-duration: 500ms;
-    width: 200px;
-    transition-timing-function: step-end;  /* decides fast and slow transition, slow in start fast in end OR fast in start fast in end OR slow in between and fast in start & end etc */
+    background-color: aqua;
+    transition-property: background-color;
+    transition-duration: 2s;
+    /* transition-timing-function: step-end;  decides fast and slow transition, slow in start fast in end OR fast in start fast in end OR slow in between and fast in start & end etc */
 }
 
 /* Short hand 

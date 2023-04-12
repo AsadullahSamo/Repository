@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800">
+    <title> Accessibility using Quiz </title>
+</head>
+<body>
+
+    <div class="position-main">
+    <h1> <span class="heading">HTML/CSS Quiz</span> </h1>
+    <ul>
+        <li> <a class="right" href="#css" accesskey="c">CSS</a> </li>
+        <li> <a class="right" href="#html" accesskey="h">HTML</a> </li>
+        <li> <a class="right" href="#info" accesskey="i">INFO</a> </li>
+    </ul>
+    </div>
+
+    <div class="student-info">
+    <h2 id="info"> Student Info</h2>
+    <div class="divider"></div>
+    <form action="httpbin.org.get" method="get">
+        <label for="name"> Name:
+        <input type="text" name="name" id="name">
+        </label> <br>
+        <label for="email"> Email:
+            <input type="email" name="email" id="email">
+        </label> <br>
+        <label for="dob"> D.O.B:
+            <input type="date" name="dob" value="dob" id="dob">
+        </label> <br>
+    
+    </form>
+    </div> <br><br><br>
+
+    <div class="html-questions">
+        <h2 id="html"> HTML </h2>
+        <div class="divider"></div>
+        <h3 class="spacing"> Question #1 </h3>
+        <p class="spacing"> The legend element represents a caption for the content of its parent fieldset element </p>
+        
+        <form action="httpbin.org/get" method="get">
+            <label for="question-one">
+            <input type="radio" name="question-one" id="question-one", value="question-one"> True
+            </label> <br>
+            <label for="question-two">
+                <input type="radio" name="question-two" id="question-two", value="question-two"> False 
+            </label>
+        </form>
+    </div>
+
+    <div class="html-questions">
+        <h3 class="spacing" style="margin-top: 50px;"> Question #2 </h3>
+        <p class="spacing"> A label element nesting an input element is required to have a for attribute with the same value as the input's id
+        </p>
+        
+        <form action="httpbin.org/get" method="get">
+            <label for="question-one">
+            <input type="radio" name="question-one" id="question-one", value="question-one"> True
+            </label> <br>
+            <label for="question-two">
+                <input type="radio" name="question-two" id="question-two", value="question-two"> False 
+            </label>
+        </form>
+    </div>
+
+    <div class="css-questions">
+        <h2 style="margin-top: 100px;" id="css"> CSS </h2>
+        <div class="divider"></div>
+        <p class="spacing"> Are you an frontend developer? </p>
+        <label for="yes-no">
+        <select id="yes-no", value="yes-no", name="yes-no" required>
+            <option> Yes </option>
+            <option> No </option>
+        </select>
+        <p> Do you have any questions:</p>
+        <textarea name="review" id="review" cols="30" rows="5"></textarea>
+        </label>
+    </div>
+
+    <input type="submit" value="Submit" id="submit">
+<br><br><br>
+    <footer>
+        <p> freeCodeCamp </p>
+        <p> San Fransisco </p>
+        <p> California </p>
+        <p> USA </p>
+    </footer>
+
+</body>
+</html>

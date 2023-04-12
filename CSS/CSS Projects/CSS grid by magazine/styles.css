@@ -1,0 +1,87 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #141e28;
+}
+a{
+    color: white;
+}
+h1{
+    font-size: 60px;
+    color: #ff4500;
+    font-family: Tahoma;
+    text-align: center;
+}
+#description{
+    text-align: center;
+    color: #ff4500;
+    font-size: 30px;
+    margin-top: -20px;
+}
+#description-2{
+    color: #faf0e6;
+    font-size: 20px;
+    font-family: Tahoma;
+    margin-left: 18px;
+    clear: left;
+}
+span{
+    color: #86887f;
+    font-family: Hack-Zeroslash;
+}
+.icons{
+    float: right;
+    font-size: 35px; 
+    color: white;
+    position: relative;
+    top: -62px;
+}
+ul li{
+    display: inline-block;
+    margin-right: 50px;
+    list-style-type: none;
+}
+#para{
+    color: #faf0e6;
+    font-size: 20px;
+    clear: right;
+    column-count: 3;
+    line-height: 1.3;
+    /* column-rule: 1px solid red; */
+}
+#para::first-letter{
+    color: #ff4500;
+    font-size: 6rem;
+    margin-right: 1rem;
+    float: left;
+}
+.color{
+    color: #00beef;
+}
+.margin1{
+    margin-top: -17px;
+}
+.margin-para{
+    color: #faf0e6;
+    font-size: 18px;
+}
+.emphasis{
+    padding: 35px;
+    font-size: 33px;
+    color: #00beef;
+}
+.emphasis-pos-1, .emphasis-pos-2{
+    position: relative;
+    left: 22px;
+}
+.emphasis-pos-2{
+    left: 100px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 630px 450px 250px;
+}
+#grid-1{
+    grid-column: 2 / span 3;
+}

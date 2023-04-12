@@ -1,0 +1,127 @@
+@font-face {
+    font-family: poppins;
+    src: url('fonts/Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: raleway;
+    src: url('fonts/Raleway/static/Raleway-Medium.ttf');
+}
+@font-face {
+    font-family: poppins-light;
+    src: url('fonts/Poppins/Poppins-ThinItalic.ttf');
+}
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #ede3e5;
+}
+main{
+    margin-top: 500px;
+    background-color: #45567d;
+    width: 100%;
+    height: 250vh;
+    margin-top: -3%;
+}
+main #heading2{
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    color: #f0f0f0;   
+    top: 15vh;
+    font-family: raleway;
+}
+main div#divider{
+    width: 45%;
+    height: 0.3vh;
+    background-color: white;
+    border-radius: 10%;
+    position: relative;
+    top: 12.5%;
+    left: 27.5%;
+}
+section.project{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
+}
+main section div.projects{
+    margin: auto;
+    width: 28%;
+    height: 65vh;
+    border: 2px solid #303841;
+}
+div.projects h3.base-title, h3.base-title2, h3.top-base-title, h3.base-title3, h3.base-title4{
+    width: 100%;
+    height: 7.5vh;
+    background-color: #303841;
+    position: relative;
+    bottom: 35px;
+}
+div.projects h3.text{
+    color: white;
+    font-size: 22px;
+    font-family: poppins;
+    text-align: center;
+    padding-top: 0px;
+}
+img{
+    position: relative;
+    width: 100%;
+}
+img[src="img/Project Images/4.png"], img[src="img/Project Images/5.png"]{
+    position: relative;
+    width: 100%;
+    top: -50px;
+}
+img[src="img/Project Images/5.png"]{
+    top: -50px;
+}
+h3.top-base-title{
+    background-color: #303841;
+    top: -25px;
+}
+h3.base-title2{
+    bottom: 82px;
+}
+h3.base-title3{
+    bottom: 95px;
+    height: 6.5vh;
+}
+h3.base-title4{
+    bottom: 53px;
+}
+.code{
+    color: #ff7f50;
+    visibility: hidden;
+}
+main section div.projects:hover .code{
+    cursor: pointer;
+    visibility: visible;
+    transition: visibility 6s ease-out;
+}
+
+@media screen and (max-width: 768px){
+    section.project{
+        flex-direction: column;   
+        gap: 15px;
+    }
+    main section div.projects{
+        width: 63%;
+        height: 65vh;
+    }
+    main{
+        height: 650vh;
+    }
+}

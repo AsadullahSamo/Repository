@@ -1,0 +1,250 @@
+body{
+    overflow: hidden;
+}
+:root{
+    --building-color: #000000;
+    --floor: #777777;
+}
+body{
+    background-color: #222233;
+}
+#circle-place{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+#circle{
+    box-shadow: -10px -10px 40px 115px rgba(61, 61, 78, 0.6);
+    background-color: #cccccc;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+.building, #third-building, #forth-building, #square-1, #square-2, #square-3, #three-boxes, #sixth-building, #seventh-building, #eighth-building, #ninth-building, #rect-1, #rect-2, #tenth-building{
+    position: absolute;
+    left: 120px;
+    bottom: 0;
+    margin-top: 15px;
+    width: 100px;
+    height: 300px;
+    background-color: var(--building-color);
+}
+#third-building{
+    left: 270px;
+    height: 240px;
+}
+#forth-building{
+    height: 265px;
+    left: 370px;
+}
+#sixth-building{
+    width: 95px;
+    left: 529px;
+    height: 320px;
+    z-index: -1;
+}
+#seventh-building{
+    left: 597px;
+    height: 187px;
+}
+#eighth-building{
+    left: 675px;
+    z-index: -1;
+    height: 225px;
+    width: 85px;
+}
+#ninth-building{
+    z-index: -2;
+    left: 740px;
+    height: 270px;
+    width: 115px;
+}
+#tenth-building{
+    left: 836px;
+    height: 220px;
+}
+#square-1{
+    z-index: 1;
+    height: 73px;
+    left: 450px;
+    display: inline-block;
+}
+#square-2{
+    height: 73px;
+    z-index: 1;
+    left: 450px;
+    bottom: 92px;
+}
+#square-3{
+    width: 70px;
+    height: 20px;
+    z-index: 1;
+    left: 470px;
+    bottom: 72px;
+}
+#rect-1{   
+    position: absolute;
+    bottom: 266px;
+    left: 748px;
+    height: 19px;
+    width: 100px;
+    z-index: 2;
+}
+#rect-2{
+    bottom: 285px;
+    left: 794px;
+    width: 5px;
+    height: 50px;
+}
+#three-boxes{
+    width: 70px;
+    height: 30px;
+    z-index: 1;
+    left: 460px;
+    bottom: 163px;
+}
+.boxes{
+    display: inline-block;
+    width: 20px;
+    position: relative;
+    left: 458px;
+    height: 20px;
+    background-color: #777;
+    bottom: -126px;
+    z-index: 1;
+}
+
+.lines, .second-lines, .forth-lines, .sixth-lines, .seventh-lines, .ninth-lines, .tenth-lines{
+    display: inline-block;
+    background-color: var(--floor);
+    width: 5px;
+    height: 250px;
+    position: relative;
+    left: 5px;
+    margin-left: 5px;
+    bottom: -25px;
+    z-index: 1;
+}
+.second-lines{
+    left: 4px;
+    width: 22px;
+    height: 190px;
+    bottom: -50px;
+}
+.forth-lines{
+    top: 0;
+    margin-top: 10px;
+    left: -5px;
+    width: 97px;
+    height: 10px;
+}
+.sixth-lines{
+    height: 318px;
+    bottom: 0px;
+    background-image: linear-gradient(to right, #2c2c2c, #737373);
+}
+.seventh-lines{
+    top: 5px;
+    width: 37px;
+    height: 10px;
+}
+.ninth-lines{
+    width: 18px;
+    top: 10px;
+    left: 3px;    
+}
+.tenth-lines{
+    margin-top: 10px;
+    left: 5px;
+    top: 5px;
+    width: 20px;
+    height: 37px;
+}
+#first-building{
+    width: 110px;
+    height: 310px;
+    position: absolute;
+    left: 80px;
+    z-index: -1;
+    bottom: 0;
+    background-image: linear-gradient(#000000 25%, #1f1f1f, #686868);
+}
+#square{
+    position: absolute;
+    left: 22px;
+    bottom: 300px;
+    width: 60px;
+    height: 40px;
+    background-color: var(--building-color);
+}
+#triangle, #forth-triangle, #eighth-triangle{
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 50px 20px 50px 20px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: var(--building-color);
+    position: absolute;
+    bottom: 330px;
+    left: 33px;
+    z-index: -1;
+
+}
+#forth-triangle{
+    border-width: 20px 50px 30px 50px;
+    border-top-right-radius: 15px;
+    left: 0px;
+    bottom: 265px;
+}
+#eighth-triangle{
+    border-width: 50px 85px 20px 0px;
+    left: 0px;
+    top: -70px;
+}
+.eighth-circles{
+    display: inline-block;
+    background-color: #777;
+    position: relative;
+    width: 25px;
+    height: 19px;
+    left: 0px;
+    top: -25px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+#second-square-1{
+    width: 105px;
+    height: 43px;
+    position: absolute;
+    left: 78px;
+    bottom: 310px;
+    background-image: linear-gradient(#0a0a0a 15%, #525252, #656565);
+    display: inline-block;
+    z-index: -1;
+}
+#second-square-2{
+    width: 95px;
+    height: 43px;
+    position: absolute;
+    left: 84px;
+    bottom: 350px;
+    background-image: linear-gradient(#0a0a0a 15%, #525252, #656565);
+    display: inline-block;
+    z-index: -2;
+}
+#second-square-3{
+    width: 85px;
+    height: 43px;
+    position: absolute;
+    left: 90px;
+    bottom: 390px;
+    background-image: linear-gradient(#0a0a0a 20%, #525252, #656565);
+    display: inline-block;
+    z-index: -3;
+}
