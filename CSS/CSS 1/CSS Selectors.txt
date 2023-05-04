@@ -1,4 +1,4 @@
-Inline has more priority then internal or external depending on which is written done
+Inline has more priority then internal or external depending on which is written down
 
 Also if same process is applied on one element i.e. either they have all 3 selectors OR same class is taken but with different class, then priority is given to that which is at bottom 
 We have 3 selectors in CSS

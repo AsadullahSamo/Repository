@@ -12,7 +12,7 @@ p::first-letter{
     color: red;
 }
 h1::before{
-    content: url('E:/My Data/My MS Files/Davinci Resolve.jpg');
+    content: url('img/c++.gif');
 }
 ::selection{      /* when user selects anything (:: denotes that this is for entire file)    */
     color: red;

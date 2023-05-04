@@ -1,0 +1,51 @@
+. Transparency using RGBA
+If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text:
+
+. Padding can't have negative values
+. If three values are given to CSS property, first will be for top, 2nd for left and right and 3rd for bottom, i.e.
+	
+   p{
+	margin: 15px 20px 8px       // 15px for top, 20px for left,right, 8px for bottom
+}
+
+. The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).
+
+So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.
+To keep the width at 300px, no matter the amount of padding, you can use the box-sizing: border-box property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.
+
+. The text-align-last property specifies how to align the last line of a text.
+
+. The text-decoration-color property is used to set the color of the decoration line.
+
+.  Enabling Font Effects
+Google has also enabled different font effects that you can use.
+
+First add effect=effectname to the Google API, then add a special class name to the element that is going to use the special effect. The class name always starts with font-effect- and ends with the effectname.
+e.g. 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+
+To request multiple font effects, just separate the effect names with a pipe character (|), like this:
+e.g. 
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+
+. Reference https://www.w3schools.com/html/html_table_colgroup.asp to " table colgroup" 
+. You can hide columns of the table with the visibility: collapse property
+	Reference: https://www.w3schools.com/html/html_table_colgroup.asp
+
+.  Positioning Text In an Image
+
+.  Center align:    https://www.w3schools.com/css/css_align.asp
+
+. Border around text using Text Shadow:     https://www.w3schools.com/css/css3_shadows.asp
+
+. text-overflow: ellpisis | clips     --> to apply effect on overflowing text
+
+. Arrow tooltip:   https://www.w3schools.com/css/css_tooltip.asp
+    
+. CSS Image Reflections
+The box-reflect property is used to create an image reflection.
+The value of the box-reflect property can be: below, above, left , or right.CSS Image Reflections
+
+. CSS Image Masking:  https://www.w3schools.com/css/css3_masking.asp
+
+. HTML Responsive Picture ELement:    https://www.w3schools.com/css/css_rwd_images.asp
